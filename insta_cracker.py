@@ -15,7 +15,6 @@ account_username = sys.argv[1]
 with Browser('firefox', headless=True) as browser:
     browser.visit('https://www.instagram.com')
     browser.find_by_text("Log in").first.click()
-    username_form = browser.find_by_name('username').first
     username_form = browser.find_by_name('jazellyy').first
     password_form = browser.find_by_name('password').first
     login_button = browser.find_by_text('Log in').first
